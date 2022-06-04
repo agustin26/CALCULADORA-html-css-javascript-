@@ -1,0 +1,116 @@
+* {/*el selector * es un selector universal, representa a todo el viewport*/
+    box-sizing: border-box; /* da las dimenciones de la caja, cambaindo los valores por defecto a 0*/
+    margin: 0; /*saca los margenes, tanto de los costados como de arriba y abajo*/
+    padding: 0;/*igualmente con el padding*/
+}
+body{ /* selector de tipo, se usa como selector a la etiqueta body*/
+    background-color: black;/*da un color negro de fondo para todo el body*/
+    color: #ffffff; /* da color blanco a a las letras de Trabajo Practico*/
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");/*da textura al fondo sobre el color*/
+    font-size: 16px; /*da el tamaño a la fuente , con 16px*/
+    font-family: 'Oswald', sans-serif; /*usa como fuente principal Oswald y como secundaria sans-serif*/
+}
+p{/*selector de tipo,se usa como selector a la etiqueta p, modifica a todos los p*/
+    font-size: x-large; /* Ajusta el texto del párrafo a un cuerpo de letra medianamente grande. */
+}
+.container{ /*es un selector de clase(class)*/
+    display: grid;  /*se usa display grid para poner dos "cajas" una alado de la otra*/
+    grid-template-columns: 70% 1fr;/*columnas-plantilla-cuadrícula pone en columnas los elementos*/
+    grid-column-gap:-1%;/*rejilla-columna-hueco(sin uso)*/
+
+}
+.calculadora{/*selector de clase*/
+    padding-left: 30%;/*da un padding de 30% a la izquierda*/
+}
+#container-history{
+    display: block; /*usa display block para poner los elementos uno debajo de otro*/
+    border-radius: 1%; /* redondea los bordes 1% de cada lado*/
+    transform: rotate(3deg);/*mueve el elemento sobre si mismo 3deg(grados) en el sentido de las agujas del reloj*/
+    height: 100%; /*da una altura de 100%*/
+    width: 90%;/*da un ancho de 90%*/
+    background-color: rgb(255, 255, 255);/*pone un color de fondo rgb*/
+    opacity: 0.7;/*da opacacidad(transparencia) a la "caja" o elemento*/
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 7px -7px 0px -2px , rgb(31, 193, 27) 7px -7px, rgb(255, 255, 255) 14px -14px 0px -2px, rgb(255, 217, 19) 14px -14px, rgb(255, 255, 255) 21px -21px 0px -2px, rgb(255, 156, 85) 21px -21px;/*, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;*/
+/*box-shadow sobra de las cajas, usa para hacerle sombras al historial, dandole distintos colores y dimenciones*/
+}
+h1, h3{/*selector de tipo*/
+    text-align: center; /*es una propieda de centrado de texto*/
+    color:cornflowerblue;/*da color a las letras que esten dentro de el h1 o h3*/
+}
+h4{/*selector de tipo*/
+    font-family: 'Indie Flower', cursive;/*selecciona el tipo de fuente, usando como fuente principal Indie Flower y como secundaria cursive*/
+    font-size: x-large;/*da a la fuente un size(tamaño) medianamente grande*/
+}
+#title-history{/*es un selector segun el ID del elemento */
+    font-family: 'Indie Flower', cursive;
+    font-size: xx-large;
+}
+
+.title{/*selector de clase*/
+    padding-bottom: 3%;/*da un padding inferior de 3%*/
+}
+
+form{/* selector de tipo, se aplica a todo el form*/
+    width: 100%;/*ancho*/
+    max-width: 400px;/*da un ancho maximo de 400px*/ 
+    text-align: center;/* centra el texto*/
+    border: solid 1px #c2c2c2;/*da un borde con un estilo solido y de 1px*/
+    border-radius: 5%; /*redondea un 5% el borde*/
+    padding-bottom: 10px;/*da una separacion inferior de 10% hacia adentro de la caja*/
+    margin: auto;/*centra automaticamente el elemento*/
+    background: rgb(106, 97, 97);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+/*da sombras al contorno de la calculadora(caja)*/
+}
+
+form input[type="button"]/*selector de tipo*,en este caso selecciona a los input de tipo boton*/
+{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+/*da sombras a los botones de la calculadora*/
+}
+#insset {/*selector de tipo id*/
+    margin-left: 6%;/*margen izquierdo de 6%*/
+    margin-right: 6%;/*margen derecho de 6%*/
+    border: solid;/*da un bordede estilo solido*/
+    border-style: inset;/*da un estilo de  borde tipo recuadro(hacia adentro)*/
+    border-width: 4px;/*ancho de 4px de borde*/
+}
+.shadow{/*selector de clase*/
+    border-radius: 5%;/*redondea la sombra de la calculadora un 5%*/
+    width: max-content;/*ancho de la sombra, toma el tamaño del contenido*/
+    box-shadow: white 3.95px 3.95px 2.6px;/*sombras de la caja, de color blanco.(tamaño horizontal(X), vertical(Y),radio de desenfoque)*/
+}
+
+#operacion,#resultado {/*selector de id*/
+    font-family: 'Press Start 2P', cursive;/*tipo de fuente principal 'Press Start 2P', fuente secundaria cursive*/
+    width: 100%; /* ancho de 100% de su caja*/
+    padding: 16px 32px;/*un padding de 16px(top,bottom) 32px(right y left)*/
+    font-size: 20px;/*da un tamaño de fuente de 20px*/
+    border: 1px solid silver; /* borde de 1px de estilo solido y color silver*/
+    border-radius: 1px; /* redondea 1px los bordes */
+    text-align: left;/*LEER, SIN USO, INNECESARIO, debajo hay un text-align: right que lo modifica */
+    color: #333;/*da un color #333 a las letras */
+    background: #ccc;/*un color de fondo #ccc*/
+    text-align: right;/*alinea el texto hacia la derecha*/
+}
+
+  input[type=button], input[type=submit]{ /*selector de tipo, segun el valor que contenga type(no hay input de tipo submit)*/
+      background-color: darkblue ;/*color de fondo de los botones*/
+      font-weight: 600;/*grosor de la fuente de 600,es segun la fuente que se utilice*/
+      font-size: 20px;/*tamaño de la fuente,LEER(es modificado mas abajo)*/
+      color: #ffffff;/*color de la letra*/
+      border-radius: 15%;/*redondea un 15% los bordes de los botones*/
+      color: white;/*color de letra*/
+      padding: 16px 32px;/*un padding de 16px(top,bottom) 32px(right y left)*/
+      font-size: 16px;/*tamaño de la letra de 16px*/
+      min-width: 21%;/*ancho minimo de los botones de 21%*/
+      text-decoration: none;/*desactiva la decoracion del texto*/
+      margin: 8px 2px;/*da un margen entre botones de 4px top y bottom, 2px left right*/
+      cursor: pointer;/*modifica el estilo del cursor cuando se posa sobre ese elemento*/
+  }
+  /*media*/
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {/*selector de tipo segun el valor del type*/
+    /*LEER no hay input de tipo submit ni de tipo reset*/
+   /*modifica estos elementos en su estado hover,esta propiedad se activa cuando el cursor se posa sobre el elemento*/
+    background-color: rgb(56, 8, 187);/*al posar el cursor sobre estos elementos cambia de color el fondo*/
+  }

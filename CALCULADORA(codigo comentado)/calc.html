@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!--javaScript-->
+    <script type="text/javascript" src="logica.js"></script>
+    <!--fuente tipo pixel-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--fuente tipo escrita-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Programdor fullstack</title>
+
+  </head>
+  <body>
+    <h1 class="title">Programación orientada a objetos</h1>
+  </body>
+  <div class = "container">
+    <div class = "calculadora" >
+      <div class = "shadow">
+        <form name="calculator">
+          <h3>Calculadora</h3>
+          <p>Trabajo Practico.</p>
+          <div id="insset">
+            <input id = "operacion" type="textfield" name="ans" value="" disabled>
+            <input id = "resultado" type="textfield" value="" disabled>
+          </div>
+          <br>
+          <input type="button" value="1" onClick="document.calculator.ans.value+='1'"><!--va al form a travez de su name despues al name del imput(ans) y le da el valor 1-->
+          <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+          <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+          <input id ="boton" type="button" value="+" onClick="accionSumar()">
+          <br>
+          <input id = "4" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+          <input id = "5" type="button" value="5" onClick="document.calculator.ans.value+='5'">
+          <input id = "6" type="button" value="6" onClick="document.calculator.ans.value+='6'">
+          <input id = "-" type="button" value="-" onClick="accionRestar()">
+          <br>
+          <input id = "7" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+          <input id = "8" type="button" value="8" onClick="document.calculator.ans.value+='8'">
+          <input id = "9" type="button" value="9" onClick="document.calculator.ans.value+='9'">
+          <input id = "*" type="button" value="*" onClick="accionMultiplicar()">
+          <br>
+          <input id = "0" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+          <input id = "c" type="button" value="c" onClick = "accionLimpiar()">
+          <input id = "/" type="button" value="/" onClick="accionDividir()">
+          <input id = "=" type="button" value="=" onClick= "accionIgual()">
+        </form>
+      </div>
+    </div>
+      <div id="container-memory">
+        <div id="container-history">
+          <h1 id="title-history">Historial</h1>
+          <hr>
+
+        </div>
+        
+
+      </div>
+</div>
+
+
+</html>
